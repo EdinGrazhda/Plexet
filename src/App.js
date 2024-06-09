@@ -5,6 +5,8 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import OurWork from './Pages/OurWork';
+import ProductQuality from './Pages/ProductQuality';
+
 
 
 
@@ -16,6 +18,7 @@ const App = () => {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/ourwork" element={<OurWork />} />
+        <Route exact path="/ProductQuality" element={<ProductQuality />} />
 
       
       </Routes>
