@@ -1,0 +1,15 @@
+.galery-page {
+    text-align: center;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery img {
+    margin: 10px;
+    width: 221px;
+    height: 340px;
+    object-fit: cover;
+  }
+  

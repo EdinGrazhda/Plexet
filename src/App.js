@@ -6,9 +6,7 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import OurWork from './Pages/OurWork';
 import ProductQuality from './Pages/ProductQuality';
-
-
-
+import Galery from './Pages/Galery';
 
 const App = () => {
   return (
@@ -19,8 +17,7 @@ const App = () => {
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/ourwork" element={<OurWork />} />
         <Route exact path="/ProductQuality" element={<ProductQuality />} />
-
-      
+        <Route exact path="/Galery" element={<Galery />} />
       </Routes>
     </BrowserRouter>
   );
