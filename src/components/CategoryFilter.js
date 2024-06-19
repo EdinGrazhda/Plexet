@@ -2,8 +2,9 @@ import React from 'react';
 import './CategoryFilter.css';
 
 const CategoryFilter = ({ onCategoryChange }) => {
-  const categories = ['All', 'Plastik', 'Metal', 'Mobilje'];
-
+  
+  const categories = ['All', 'Plastik', 'Mobilje','Dekor'];
+  
   return (
     <div className="category-filter">
       {categories.map(category => (

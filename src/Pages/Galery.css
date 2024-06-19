@@ -42,6 +42,12 @@
   .navigation button:hover{
     transform: scale(1.100);
   } 
+  .text1{
+    text-align: center;
+    margin:5%;
+    color:#81f18e;
+    font-weight: 700;
+  }
 
 
 

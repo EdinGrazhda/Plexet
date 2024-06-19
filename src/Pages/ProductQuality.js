@@ -4,6 +4,7 @@ import foto from '../Images/foto3.jpg';
 import foto1 from '../Images/foto4.jpg';
 import foto2 from '../Images/foto5.jpg';
 import foto3 from '../Images/foto9.jpg';
+import icon from '../Images/icons/fullhd1.png'
 import '../Pages/ProductQuality.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
@@ -40,7 +41,21 @@ function ProductQuality() {
       </nav>
     
     <div className='text'>
+      
         <h1>Produits et qualité</h1>
+    </div>
+
+    <div className='box1 container '>
+      <div className='text-box'>
+        <h1 >LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
+        LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
+        LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
+        </h1>
+      </div>
+      <div className='image-box'>
+        <img className='image' src={icon}/>
+      </div>
+
     </div>
 
       <div className="wrap container">

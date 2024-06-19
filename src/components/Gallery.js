@@ -11,6 +11,7 @@ const Gallery = ({ photos, selectedCategory }) => {
         ))}
     </div>
   );
-};
+};  
 
 export default Gallery;
+
