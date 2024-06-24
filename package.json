@@ -15,6 +15,7 @@
     "axios": "^0.27.2",
     "bootstrap": "^5.3.3",
     "font-awesome": "^4.7.0",
+    "framer-motion": "^11.2.11",
     "graphql-tag": "^2.12.6",
     "mdb-react-ui-kit": "^4.1.0",
     "react": "^18.2.0",

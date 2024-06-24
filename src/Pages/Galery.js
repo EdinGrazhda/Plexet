@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import logo from '../Images/logo123.svg';
 import CategoryFilter from '../components/CategoryFilter';
+import Footer from '../components/Footer';
 import Gallery from '../components/Gallery';
 import './Galery.css';
-import plastik from  '../Images/Plastik/plastik.jpg';
+import plastik from '../Images/Plastik/plastik.jpg';
 import plastik1 from '../Images/Plastik/Plastik1.jpg';
 import plastik2 from '../Images/Plastik/Plastik2.jpg';
 import plastik3 from '../Images/Plastik/Plastik3.jpg';
@@ -34,6 +35,7 @@ import dekor13 from '../Images/Dekor/Dekor13.jpg';
 import dekor14 from '../Images/Dekor/Dekor14.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareInstagram, faSquareWhatsapp, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { motion } from 'framer-motion';
 
 const Galery = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -52,11 +54,12 @@ const Galery = () => {
     { id: 11, category: 'Mobilje', src: mobilje4 },
     { id: 12, category: 'Mobilje', src: mobilje5 },
     { id: 13, category: 'Mobilje', src: mobilje6 },
-    { id: 14, category: 'Dekor', src: dekor },
-    { id: 15, category: 'Dekor', src: dekor1 },
-    { id: 16, category: 'Dekor', src: dekor2 },
-    { id: 17, category: 'Dekor', src: dekor3 },
-    { id: 18, category: 'Dekor', src: dekor4 },
+    { id: 14, category: 'Mobilje', src: mobilje7 },
+    { id: 15, category: 'Dekor', src: dekor },
+    { id: 16, category: 'Dekor', src: dekor1 },
+    { id: 17, category: 'Dekor', src: dekor2 },
+    { id: 18, category: 'Dekor', src: dekor3 },
+    { id: 19, category: 'Dekor', src: dekor4 },
     { id: 20, category: 'Dekor', src: dekor5 },
     { id: 21, category: 'Dekor', src: dekor6 },
     { id: 22, category: 'Dekor', src: dekor7 },
@@ -67,7 +70,6 @@ const Galery = () => {
     { id: 27, category: 'Dekor', src: dekor12 },
     { id: 28, category: 'Dekor', src: dekor13 },
     { id: 29, category: 'Dekor', src: dekor14 },
-    // Add more photos as needed
   ];
 
   const handleCategoryChange = (category) => {
@@ -103,27 +105,15 @@ const Galery = () => {
         </div>
       </nav>
       <h1 className='text1'>GALERI</h1>
-      <CategoryFilter onCategoryChange={handleCategoryChange} />
-      <Gallery photos={photos} selectedCategory={selectedCategory} />
 
-      <div className='footer'>
-        <div className='socialMedias'>
-          <a href=''><FontAwesomeIcon className='icon' icon={faSquareInstagram} /></a>
-          <a href=''><FontAwesomeIcon className='icon' icon={faSquareWhatsapp} /></a>
-          <a href=''><FontAwesomeIcon className='icon' icon={faFacebook} /></a>
-        </div>
-        <div className='navigation'>
-          <a href=''><button>Home</button></a>
-          <a href=''><button>About</button></a>
-          <a href=''><button>Our Work</button></a>
-          <a href=''><button>Galeri</button></a>
-          <a href=''><button>Contact</button></a>
-        </div>
-        <div className='navigation2'>
-          <h1>Copyright 2024@Plexet</h1>
-        </div>
+      <CategoryFilter onCategoryChange={handleCategoryChange} />
+      <motion.div>
+        <Gallery photos={photos} selectedCategory={selectedCategory} />
+      </motion.div>
+      
+   <Footer/>
       </div>
-    </div>
+    
   );
 };
 

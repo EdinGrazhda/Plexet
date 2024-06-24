@@ -4,8 +4,9 @@ import foto from '../Images/foto3.jpg';
 import foto1 from '../Images/foto4.jpg';
 import foto2 from '../Images/foto5.jpg';
 import foto3 from '../Images/foto9.jpg';
-import icon from '../Images/icons/fullhd1.png'
-import '../Pages/ProductQuality.css';
+import icon from '../Images/icons/fullhd1.png';
+import Footer from '../components/Footer';
+import './ProductQuality.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faSquareInstagram, faSquareWhatsapp,faFacebook } from '@fortawesome/free-brands-svg-icons';
@@ -156,24 +157,7 @@ function ProductQuality() {
       </div>
 
 
-    <div className='footer'>
-        <div className='socialMedias'>
-          <a href=''><FontAwesomeIcon className='icon' icon={faSquareInstagram} /></a>
-          <a href=''><FontAwesomeIcon className='icon'icon={faSquareWhatsapp} /></a>
-          <a href=''><FontAwesomeIcon className='icon' icon={faFacebook} /></a>
-        </div>
-        <div className='navigation'>
-          <a href=''><button>Home</button></a>
-          <a href=''><button>About</button></a>
-          <a href=''><button>Our Work</button></a>
-          <a href=''><button>Galeri</button></a>
-          <a href=''><button>Contact</button></a>
-          
-        </div>
-        <div className='navigation2'>
-              <h1>Copyright 2024@Plexet</h1>
-          </div>
-    </div>
+    <Footer/>
     </div>
   );
 }

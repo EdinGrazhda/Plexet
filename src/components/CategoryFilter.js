@@ -1,18 +1,19 @@
 import React from 'react';
 import './CategoryFilter.css';
+import { motion } from 'framer-motion';
 
 const CategoryFilter = ({ onCategoryChange }) => {
   
   const categories = ['All', 'Plastik', 'Mobilje','Dekor'];
   
   return (
-    <div className="category-filter">
+    <motion.div className="category-filter">
       {categories.map(category => (
         <button key={category} onClick={() => onCategoryChange(category)}>
           {category}
         </button>
       ))}
-    </div>
+    </motion.div >
   );
 };
 
