@@ -1,0 +1,23 @@
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+ 
+  .gallery img {
+    margin: 10px;
+    width: 221px;
+    height: 340px;
+    object-fit: cover;
+    transition: .1s;
+    border-radius: 10px;
+    cursor: pointer;
+    
+  }
+  .gallery img:hover{
+    transform:scale(1.100);
+    box-shadow: 2px 2px 10px #81f18e;
+  }
+  
