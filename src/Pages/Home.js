@@ -187,6 +187,7 @@ Bienvenue dans la Galerie de notre société Plexet. Pour voir des produits plus
 <img className='locationimg' src={Location}></img>
 </div>
 </div>
+
     </div>
   )
 }
