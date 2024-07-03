@@ -6,10 +6,41 @@
     text-align: center;
     gap: 50px;
     row-gap: 80px;
+    width: 100%;
+    height: 100%;
+    --color: rgba(0, 115, 19, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(
+        180deg,
+        transparent 24%,
+        var(--color) 25%,
+        var(--color) 26%,
+        transparent 27%,
+        transparent 74%,
+        var(--color) 75%,
+        var(--color) 76%,
+        transparent 77%,
+        transparent
+      ),
+      linear-gradient(
+        45deg,
+        transparent 24%,
+        var(--color) 35%,
+        var(--color) 26%,
+        transparent 17%,
+        transparent 74%,
+        var(--color) 75%,
+        var(--color) 76%,
+        transparent 77%,
+        transparent
+      );
+    background-size: 55px 55px;
     
 }
 
-
+.firstleft{
+  margin-top: 100px;
+}
 .firstright{
     background-image: url('../Images/Rectangle%2036.svg');
 
@@ -18,7 +49,447 @@
 
 }
 
+
+
+.presentationpart{
+  margin-top: 30px;
+}
+
+.carouselslide{
+  margin-top: 50px;
+}
+
+.galeri{
+  margin-top: 100px;
+}
+
 .firstimg{
-    height: 399px;
-    width: 400px;
+    height: 720px;
+    width: 600px;
+}
+.firsttext{
+  color: rgba(129, 241, 142, 1);
+  font-size: 60px;
+}
+
+button {
+  font-family: monospace;
+  background-color:  rgba(129, 241, 142, 1);
+  ;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 140px;
+  height: 55px;
+  transition: .3s;
+}
+
+button:hover {
+  background-color: white;
+  color:  rgba(129, 241, 142, 1);
+  border: 2px solid rgba(129, 241, 142, 1);
+}
+
+.presentation{
+  margin-top: 70px;
+  color:  rgba(129, 241, 142, 1);
+}
+.secondpic1{
+  height: 550px;
+  width: 550px;
+ 
+}
+
+.secondpic2{
+  position: relative;
+  top: -250px;
+  left:150px;
+  height: 400px;
+  width: 400px;
+}
+
+.secondtext{
+  max-width: 700px;
+  margin-left: 140px;
+  color: white;
+}
+.righttext{
+  max-width: 580px;
+  margin: 0 auto; 
+  text-align: left; 
+}
+
+.right1{
+  margin-top: -200px;
+}
+
+/* Loader */
+
+.galeriright{
+  background-color: rgba(129, 241, 142, 1);
+}
+
+.loader {
+  
+  --height-of-loader: 4px;
+  --loader-color: rgba(129, 241, 142, 1);
+  width: 130px;
+  height: var(--height-of-loader);
+  border-radius: 30px;
+  background-color: rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  background: var(--loader-color);
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  animation: moving 1s ease-in-out infinite;
+  ;
+}
+
+@keyframes moving {
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+    right: 0;
+    left: unset;
+  }
+}
+
+.secondpart{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    row-gap: 80px;
+}
+
+
+h5,p{
+    color: black;
+}
+
+/* Contact */
+.card {
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 500px;
+  
+  display: flex;
+  flex-direction: column;
+  margin-left: 180px;
+  border: 2px solid rgba(129, 241, 142, 1);
+
+}
+
+.title {
+  font-size: 44px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(129, 241, 142, 1);
+  
+}
+
+.form {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.group {
+  position: relative;
+}
+
+.form .group label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all .3s ease;
+  
+}
+
+.form .group input,
+.form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+  top: 10px;
+  background-color: transparent;
+}
+
+.form .group input:focus,
+.form .group textarea:focus {
+  border-color: #3366cc;
+}
+
+.form .group input:focus+ label, .form .group textarea:focus +label {
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  color: #3366cc;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form button {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background-color: white;
+  color:  rgba(129, 241, 142, 1);
+  border: 2px solid rgba(129, 241, 142, 1);
+}
+
+#comment{
+  height: 200px;
+}
+
+.svg{
+  position: relative;
+  top: -430px;
+}
+  .location{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    row-gap: 80px;
+    width: 100%;
+    height: 100%;
+    --color: rgba(0, 115, 19, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(
+        180deg,
+        transparent 24%,
+        var(--color) 25%,
+        var(--color) 26%,
+        transparent 27%,
+        transparent 74%,
+        var(--color) 75%,
+        var(--color) 76%,
+        transparent 77%,
+        transparent
+      ),
+      linear-gradient(
+        45deg,
+        transparent 24%,
+        var(--color) 35%,
+        var(--color) 26%,
+        transparent 17%,
+        transparent 74%,
+        var(--color) 75%,
+        var(--color) 76%,
+        transparent 77%,
+        transparent
+      );
+    background-size: 55px 55px;
+  }
+
+  .locationimg{
+    height: 700px;
+    width: 700px;
+  }
+
+
+  .galeri{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    row-gap: 80px;
+  }
+
+  .galeryimg{
+    height: 700px;
+    width: 700px;
+  }
+
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -450px;
+}
+
+
+
+
+/* responsive */
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .firstpart,
+  .location,
+  .galeri {
+      grid-template-columns: 1fr;
+      row-gap: 50px;
+  }
+
+  .firstimg,
+  .secondpic1,
+  .secondpic2,
+  .locationimg,
+  .galeryimg {
+      height: 500px;
+      width: 100%;
+  }
+
+  .firsttext {
+      font-size: 40px;
+  }
+
+  .button,
+  .form button {
+      width: 120px;
+      height: 45px;
+  }
+
+  .presentation {
+      margin-top: 50px;
+      font-size: 24px;
+  }
+
+  .secondtext,
+  .righttext {
+      margin-left: 20px;
+      max-width: 90%;
+  }
+
+  .card {
+      width: 100%;
+      margin-left: 0;
+      padding: 15px;
+  }
+
+  .title {
+      font-size: 32px;
+  }
+
+  .form {
+      margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .firstpart,
+  .location,
+  .galeri {
+      gap: 30px;
+      row-gap: 30px;
+  }
+
+    .secondpart{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 50px;
+      row-gap: 80px;
+  }
+  
+
+.secondpic1,
+.secondpic2 {
+    height: auto;
+    width: 40px;
+    max-width: 300px;
+}
+
+.secondtext {
+    font-size: 14px;
+    margin: 0 10px;
+}
+  .firstimg,
+  .secondpic1,
+  .secondpic2,
+  .locationimg,
+  .galeryimg {
+      height: 300px;
+      width: 100%;
+  }
+
+  .firsttext {
+      font-size: 24px;
+  }
+
+  .button,
+  .form button {
+      width: 100px;
+      height: 35px;
+  }
+
+  .presentation {
+      margin-top: 20px;
+      font-size: 18px;
+  }
+
+  .secondtext,
+  .righttext {
+      margin: 0 auto;
+      max-width: 100%;
+      font-size: 10px;
+      text-align: center;
+  }
+
+
+  .card {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px;
+  }
+
+  .title {
+      font-size: 24px;
+  }
+
+  .form {
+      margin-top: 20px;
+  }
+
+  .svg {
+      top: -200px;
+  }
 }
