@@ -191,6 +191,9 @@ body {
   animation: previous-image 0.65s 0.085s;
 }
 
+.aboutp{
+  padding:20px
+}
 @keyframes previous-text {
   50%, 55% {
       transform: translate(0%, 390px);

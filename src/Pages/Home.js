@@ -9,7 +9,8 @@ import firstpic from '../Images/Rectangle 5.svg';
 import secondpic from '../Images/Rectangle 7.svg';
 import Pause from '../Images/Rectangle 8.svg';
 import Location from '../Images/Rectangle 25.svg';
-import Galery from '../Images/Rectangle 32.svg'
+import Galery from '../Images/Rectangle 32.svg';
+import Footer from '../components/Footer';
 const Home = () => {
   return (
     //Navbar
@@ -185,8 +186,12 @@ Bienvenue dans la Galerie de notre société Plexet. Pour voir des produits plus
  <div class="loader"></div>
  </center>
 <img className='locationimg' src={Location}></img>
+
+
 </div>
+
 </div>
+<Footer/>
     </div>
   )
 }

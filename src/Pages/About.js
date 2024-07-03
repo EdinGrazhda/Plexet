@@ -4,7 +4,8 @@ import logo from '../Images/logo123.svg';
 import lamp from '../Images/Rectangle 73.svg'
 import { useState } from 'react';
 import first from '../Images/04d7075a-0fc8-459c-971e-7dc33fc5c3e1.jpg';
-import second from '../Images/682592b9-e705-467e-95d1-240b36daf0df.jpg'
+import second from '../Images/682592b9-e705-467e-95d1-240b36daf0df.jpg';
+import Footer from '../components/Footer';
 const text1Options = [
   "Why art is so important",
   "Why you shouldn't buy the new iPhone",
@@ -101,9 +102,10 @@ PVC expansé.</p>
     <img className='lamp' src={lamp}></img>
     </div>
     <div className='aboutright'>
-    <p className='aboutp'>Aucune méthode de formatage.   Perçage, gravure et découpe laser. .Thermoformage. .Usinage, pliage à chaud. .La connexion à deux composants. .Sablage, brossage et polissage. .Lettres découpées ou laser sur plexiglas, inox, scrap. (La police et la hauteur de la police doivent être précisées lors de la commande).</p>
+    <p className='aboutp'>Aucune méthode de formatage.Perçage, gravure et découpe laser..Thermoformage..Usinage, pliage à chaud..La connexion à deux composants..Sablage, brossage et polissage..Lettres découpées ou laser sur plexiglas, inox, scrap.(La police et la hauteur de la police doivent être précisées lors de la commande).</p>
     </div>
     </div>
+    <Footer/>
     </div>
   )
 }

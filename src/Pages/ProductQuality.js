@@ -48,9 +48,7 @@ function ProductQuality() {
 
     <div className='box1 container '>
       <div className='text-box'>
-        <h1 >LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
-        LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
-        LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
+        <h1 >Certains de nos produits ont laissé nos clients très satisfaits, tant du point de vue de la qualité que du point de vue du travail. N'hésitez pas à nous contacter pour plus d'informations. Le personnel de Plexetit est à votre disposition pour toute demande des clients.
         </h1>
       </div>
       <div className='image-box'>
