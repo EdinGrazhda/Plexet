@@ -84,6 +84,9 @@
     object-position: 50% 20%;
     transition: .1s;
   }
+  .box-title1{
+    text-align: center;
+  }
   .box-image:hover{
     transform: scale(1.100);
   }

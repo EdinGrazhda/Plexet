@@ -62,45 +62,42 @@ function ProductQuality() {
           <div className="box-top">
             <img className="box-image" src={foto} />
             <div className="title-flex">
-            <h3 className="box-title">Lorem Ipsum</h3>
-              <p className="user-follow-info">Lorem Ipsum <FontAwesomeIcon icon={faUser} /></p>
+            <h3 className="box-title1">Décorations en plastique</h3>
             </div>
-            <p className="description">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
           </div>
-          <a href="#" className="button">Follow Kelsie</a>
+         
         </div>  
         <div className="box">
           <div className="box-top">
             <img className="box-image" src={foto3}  />
             <div className="title-flex">
-            <h3 className="box-title">Lorem Ipsum</h3>
-              <p className="user-follow-info">Lorem Ipsum <FontAwesomeIcon icon={faUser} /></p>
+            <h3 className="box-title1">Décorations en métal </h3>
+       
             </div>
-            <p className="description">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+            
           </div>
-          <a href="#" className="button">Follow Kelsie</a>
+         
         </div>
         <div className="box">
           <div className="box-top">
             <img className="box-image" src={foto2}  />
             <div className="title-flex">
-            <h3 className="box-title">Lorem Ipsum</h3>
-              <p className="user-follow-info">Lorem Ipsum <FontAwesomeIcon icon={faUser} /></p>
+            <h3 className="box-title1">Décorations en verre</h3>
+    
             </div>
-            <p className="description">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+           
           </div>
-          <a href="#" className="button">Follow Kelsie</a>
+          
         </div>
         <div className="box">
           <div className="box-top">
             <img className="box-image" src={foto1}  />
             <div className="title-flex">
-            <h3 className="box-title">Lorem Ipsum</h3>
-              <p className="user-follow-info">Lorem Ipsum <FontAwesomeIcon icon={faUser} /></p>
+            <h3 className="box-title1">décorations pour la maison</h3>
             </div>
-            <p className="description">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+          
           </div>
-          <a href="#" className="button">Follow Kelsie</a>
+          
         </div>
       </div>
       
@@ -112,45 +109,45 @@ function ProductQuality() {
           <div className="box-top">
             <img className="box-image" src={foto} />
             <div className="title-flex">
-              <h3 className="box-title">Lorem Ipsum</h3>
-              <p className="user-follow-info">Lorem Ipsum <FontAwesomeIcon icon={faUser} /></p>
+              <h3 className="box-title1">Lorem Ipsum</h3>
+             
             </div>
-            <p className="description">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+            
           </div>
-          <a href="#" className="button">Follow Kelsie</a>
+          
         </div>
         <div className="box">
           <div className="box-top">
             <img className="box-image" src={foto} />
             <div className="title-flex">
-              <h3 className="box-title">Mark Carusso</h3>
-              <p className="user-follow-info">33 Projects <FontAwesomeIcon icon={faUser} /></p>
+              <h3 className="box-title1v">Mark Carusso</h3>
+             
             </div>
-            <p className="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
+          
           </div>
-          <a href="#" className="button">Follow Mark</a>
+          
         </div>
         <div className="box">
           <div className="box-top">
             <img className="box-image" src={foto} />
             <div className="title-flex">
-              <h3 className="box-title">Taylor Green</h3>
-              <p className="user-follow-info">26 Projects <FontAwesomeIcon icon={faUser} /></p>
+              <h3 className="box-title1">Taylor Green</h3>
+              
             </div>
-            <p className="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
+        
           </div>
-          <a href="#" className="button">Follow Taylor</a>
+        
         </div>
         <div className="box">
           <div className="box-top">
             <img className="box-image" src={foto} />
             <div className="title-flex">
-              <h3 className="box-title">Isaiah Jian</h3>
-              <p className="user-follow-info">12 Projects <FontAwesomeIcon icon={faUser} /></p>
+              <h3 className="box-title1">Isaiah Jian</h3>
+              
             </div>
-            <p className="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
+         
           </div>
-          <a href="#" className="button">Follow Isaiah</a>
+          
         </div>
       </div>
 
