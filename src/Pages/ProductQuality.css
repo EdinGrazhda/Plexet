@@ -84,17 +84,18 @@
     object-position: 50% 20%;
     transition: .1s;
   }
-  .box-title1{
-    text-align: center;
-  }
+
   .box-image:hover{
     transform: scale(1.100);
   }
-  
+  .box-title14{
+    text-align: center;
+  }
   .title-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
   }
   
   .box-title {
