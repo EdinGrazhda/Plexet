@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../Images/logo123.svg';
 import CategoryFilter from '../components/CategoryFilter';
 import Footer from '../components/Footer';
@@ -38,6 +38,10 @@ import { faSquareInstagram, faSquareWhatsapp, faFacebook } from '@fortawesome/fr
 import { motion } from 'framer-motion';
 
 const Galery = () => {
+  useEffect(() => {
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
+  }, []);
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const photos = [

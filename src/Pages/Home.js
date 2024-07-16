@@ -10,7 +10,15 @@ import secondpic from '../Images/Rectangle 7.svg';
 import Pause from '../Images/Rectangle 8.svg';
 import Location from '../Images/Rectangle 25.svg';
 import Galery from '../Images/Rectangle 32.svg'
+import Footer from '../components/Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+
+
+import { faInstagram,faWhatsapp, faFacebook } from '@fortawesome/free-brands-svg-icons';
+
 const Home = () => {
+
   return (
     //Navbar
     <div>
@@ -46,12 +54,27 @@ const Home = () => {
  <div  className='firstpart'>
   <div className='firstleft'>
    <h1 className='firsttext'>Plexet </h1>
+   <center>
+ <div class="loader"></div>
+ </center>
    <h1 className='secondtext'>Pour une expérience de qualité supérieure et unique, Plexet est à votre service. Pour en savoir plus sur nos projets, cliquez sur le bouton ci-dessous.</h1>
 
-<button>
-Cliquez ici
-</button>
-<img src={whatsapp}></img>
+   <div className="inline-container">
+    <Link to='/productquality'>
+    <button>Cliquez ici</button>
+
+    </Link>
+    {/* <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank" rel="noopener noreferrer">
+  <FontAwesomeIcon icon={faWhatsapp} className="iconstyle" />
+</a> */}
+ <a href="https://api.whatsapp.com/send?phone=+38349240114" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faWhatsapp} className="iconstyle" />
+      </a>
+      <a href="https://www.instagram.com/plexet_ch?igsh=MXQwbW0zcWFzd2VkZg%3D%3D&utm_source=qr">
+        <FontAwesomeIcon icon={faInstagram} className="iconstyle" />
+      </a>
+      <FontAwesomeIcon icon={faFacebook} className="iconstyle" />
+    </div>
   </div>
   <div className='firstright'>
    <img className='firstimg' src={rectangle}></img>
@@ -90,8 +113,11 @@ Moquette modélisme.
 
       </h2>
       <div className='presentationpart'>
-      <button>Cliquez ici
-      </button>
+      <Link to='/about'>
+    <button>Cliquez ici</button>
+
+    </Link>
+     
       <img src={support}></img>
       <img src={search}></img>
       </div>
@@ -146,11 +172,12 @@ Moquette modélisme.
 <center>
  <div class="loader"></div>
  </center>
-<h2>
+<h2 className='galeritext1'>
 Bienvenue dans la Galerie de notre société Plexet. Pour voir des produits plus spécifiques et plus récents sur le marché ainsi que des produits uniques prouvés, visitez nos œuvres en cliquant sur le bouton ci-dessous
 </h2>
 
-<button>Cliquez sur</button>
+<Link to="/galery"><button>Cliquez sur</button>
+</Link>
 
 </div>
 <div className='galeriright'>
@@ -187,7 +214,7 @@ Bienvenue dans la Galerie de notre société Plexet. Pour voir des produits plus
 <img className='locationimg' src={Location}></img>
 </div>
 </div>
-
+  <Footer/>
     </div>
   )
 }

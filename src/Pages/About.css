@@ -275,9 +275,15 @@ body {
   background: rgba(129, 241, 142, 1);
 }
 
-.aboutright {
-  background-color: white;
+  .aboutright {
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
+
 
 .lamp {
   height: 600px;
@@ -286,6 +292,9 @@ body {
 
 .aboutp {
   max-width: 700px;
+  display: grid;
+  align-items: center;
+
 }
 
 /* Responsive Styles */
