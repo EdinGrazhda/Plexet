@@ -60,7 +60,7 @@ function ProductQuality() {
 
     <div className='box1 container '>
       <div className='text-box'>
-        <h1 >Certains de nos produits ont laissé nos clients très satisfaits, tant du point de vue de la qualité que du point de vue du travail. N'hésitez pas à nous contacter pour plus d'informations. Le personnel de Plexetit est à votre disposition pour toute demande des clients.
+        <h1 id='textii' >Certains de nos produits ont laissé nos clients très satisfaits, tant du point de vue de la qualité que du point de vue du travail. N'hésitez pas à nous contacter pour plus d'informations. Le personnel de Plexetit est à votre disposition pour toute demande des clients.
         </h1>
       </div>
       <div className='image-box'>
@@ -119,9 +119,9 @@ function ProductQuality() {
       <div className="wrap1 container">
         <div className="box">
           <div className="box-top">
-            <img className="box-image" src={foto} />
+            <img className="box-image" src={foto5} />
             <div className="title-flex">
-              <h3 className="box-title1">Lorem Ipsum</h3>
+              <h3 className="box-title1">Décorations Lumineuses</h3>
              
             </div>
             
@@ -130,9 +130,9 @@ function ProductQuality() {
         </div>
         <div className="box">
           <div className="box-top">
-            <img className="box-image" src={foto} />
+            <img className="box-image" src={foto6} />
             <div className="title-flex">
-              <h3 className="box-title1v">Mark Carusso</h3>
+              <h3 className="box-title1v">Décoration pour restaurant</h3>
              
             </div>
           
@@ -141,9 +141,9 @@ function ProductQuality() {
         </div>
         <div className="box">
           <div className="box-top">
-            <img className="box-image" src={foto} />
+            <img className="box-image" src={foto7} />
             <div className="title-flex">
-              <h3 className="box-title1">Taylor Green</h3>
+              <h3 className="box-title1">Décorations pour Chambre</h3>
               
             </div>
         
@@ -152,9 +152,9 @@ function ProductQuality() {
         </div>
         <div className="box">
           <div className="box-top">
-            <img className="box-image" src={foto} />
+            <img className="box-image" src={foto10 } />
             <div className="title-flex">
-              <h3 className="box-title1">Isaiah Jian</h3>
+              <h3 className="box-title1">Lampe décorative</h3>
               
             </div>
          
