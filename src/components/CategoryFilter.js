@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const CategoryFilter = ({ onCategoryChange }) => {
   
-  const categories = ['All', 'Plastik', 'Mobilje','Dekor'];
+  const categories = ['Tout', 'Plastique', 'Meubles','Décor'];
   
   return (
     <motion.div className="category-filter">

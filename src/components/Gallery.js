@@ -6,7 +6,7 @@ const Gallery = ({ photos, selectedCategory }) => {
   return (
     <motion.div Layout className="gallery">
       {photos
-        .filter(photo => selectedCategory === 'All' || photo.category === selectedCategory)
+        .filter(photo => selectedCategory === 'Tout' || photo.category === selectedCategory)
         .map(photo => (
           <img key={photo.id} src={photo.src} alt={photo.category} />
         ))}

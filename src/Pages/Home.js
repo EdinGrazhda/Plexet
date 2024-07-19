@@ -1,4 +1,3 @@
-import React from 'react'
 import '../Pages/Home.css'
 import logo from '../Images/logo123.svg';
 import rectangle from '../Images/Rectangle 19.svg';
@@ -9,9 +8,24 @@ import firstpic from '../Images/Rectangle 5.svg';
 import secondpic from '../Images/Rectangle 7.svg';
 import Pause from '../Images/Rectangle 8.svg';
 import Location from '../Images/Rectangle 25.svg';
-import Galery from '../Images/Rectangle 32.svg';
+import Galery from '../Images/Rectangle 32.svg'
 import Footer from '../components/Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+import dekor from '../Images/Dekor/Dekor10.jpg';
+import mobilje from '../Images/Mobilje/Mobilje3.jpg'
+import plastik from '../Images/Plastik/Plastik5.jpg';
+import React from 'react';
+
+
+
+
+
+import { faInstagram,faWhatsapp, faFacebook } from '@fortawesome/free-brands-svg-icons';
+
 const Home = () => {
+
+
   return (
     //Navbar
     <div>
@@ -47,12 +61,30 @@ const Home = () => {
  <div  className='firstpart'>
   <div className='firstleft'>
    <h1 className='firsttext'>Plexet </h1>
+   <center>
+ <div class="loader"></div>
+ </center>
    <h1 className='secondtext'>Pour une expérience de qualité supérieure et unique, Plexet est à votre service. Pour en savoir plus sur nos projets, cliquez sur le bouton ci-dessous.</h1>
 
-<button>
-Cliquez ici
-</button>
-<img src={whatsapp}></img>
+   <div className="inline-container">
+    <Link to='/productquality'>
+    <button>Cliquez ici</button>
+
+    </Link>
+    {/* <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank" rel="noopener noreferrer">
+  <FontAwesomeIcon icon={faWhatsapp} className="iconstyle" />
+</a> */}
+<a href="https://api.whatsapp.com/send?phone=41796462626" target="_blank" rel="noopener noreferrer">
+<FontAwesomeIcon icon={faWhatsapp} className="iconstyle" />
+      </a>
+      <a  href="https://www.instagram.com/plexet_ch?igsh=MXQwbW0zcWFzd2VkZg%3D%3D&utm_source=qr" target="_blank">
+        <FontAwesomeIcon icon={faInstagram} className="iconstyle" />
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61563409940325" target="_blank">
+
+      <FontAwesomeIcon icon={faFacebook} className="iconstyle" />
+      </a>
+    </div>
   </div>
   <div className='firstright'>
    <img className='firstimg' src={rectangle}></img>
@@ -91,8 +123,11 @@ Moquette modélisme.
 
       </h2>
       <div className='presentationpart'>
-      <button>Cliquez ici
-      </button>
+      <Link to='/about'>
+    <button>Cliquez ici</button>
+
+    </Link>
+     
       <img src={support}></img>
       <img src={search}></img>
       </div>
@@ -100,46 +135,44 @@ Moquette modélisme.
       
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" className='svg' viewBox="0 0 1440 320"><path fill="rgba(129, 241, 142, 1)" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,186.7C384,203,480,213,576,202.7C672,192,768,160,864,154.7C960,149,1056,171,1152,192C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-    <div className='sliderpart'>
-    <div id="carouselExampleCaptions" className="carousel slide">
-  <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src={Pause} className="d-block w-100" alt="..." />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+    <div className='imageslider3'>   
+      <div id="carouselExampleCaptions" className="carousel slide">
+        <div className="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={mobilje} className="d-block w-100" alt="..."/>
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Meubles</h5>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <img src={dekor} className="d-block w-100" alt="..."/>
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Décor</h5>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <img src={plastik} className="d-block w-100" alt="..."/>
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Plastique</h5>
+            </div>
+          </div>
+        </div>
+        <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+          <i className="fas fa-chevron-left" aria-hidden="true"></i>
+          <span className="visually-hidden">Previous</span>
+        </a>
+        <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+          <i className="fas fa-chevron-right" aria-hidden="true"></i>
+          <span className="visually-hidden">Next</span>
+        </a>
       </div>
     </div>
-    <div className="carousel-item">
-      <img src={Pause} className="d-block w-100" alt="..." />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <img src={Pause} className="d-block w-100" alt="..." />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
+
 <div className='galeri'>
 <div className='galerileft'>
   
@@ -147,11 +180,12 @@ Moquette modélisme.
 <center>
  <div class="loader"></div>
  </center>
-<h2>
+<h2 className='galeritext1'>
 Bienvenue dans la Galerie de notre société Plexet. Pour voir des produits plus spécifiques et plus récents sur le marché ainsi que des produits uniques prouvés, visitez nos œuvres en cliquant sur le bouton ci-dessous
 </h2>
 
-<button>Cliquez sur</button>
+<Link to="/galery"><button>Cliquez sur</button>
+</Link>
 
 </div>
 <div className='galeriright'>
@@ -190,8 +224,10 @@ Bienvenue dans la Galerie de notre société Plexet. Pour voir des produits plus
 
 </div>
 
+
 </div>
 <Footer/>
+
     </div>
   )
 }

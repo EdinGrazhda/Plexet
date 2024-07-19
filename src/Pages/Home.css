@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
-    align-items: center;
     text-align: center;
     gap: 50px;
     row-gap: 80px;
@@ -38,8 +37,27 @@
     
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Adjust width as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black; /* Change color if needed */
+  font-size: 1.5rem; /* Adjust size to make the icons smaller */
+  text-align: center;
+  padding: 0;
+}
+
+
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  font-size: 1.5rem; /* Adjust size for Font Awesome icons */
+}
+
 .firstleft{
-  margin-top: 100px;
+  margin-top:150px;
 }
 .firstright{
     background-image: url('../Images/Rectangle%2036.svg');
@@ -49,7 +67,9 @@
 
 }
 
-
+.galeritext1{
+  padding: 40px;
+}
 
 .presentationpart{
   margin-top: 30px;
@@ -95,9 +115,22 @@ button:hover {
   color:  rgba(129, 241, 142, 1);
 }
 .secondpic1{
-  height: 550px;
+  height: 400px;
   width: 550px;
  
+}
+
+.carousel-item {
+  height: 750px; /* Adjust this value to make the carousel smaller */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the container without changing aspect ratio */
+}
+.imageslider3{
+  margin-top: 60px;
 }
 
 .secondpic2{
@@ -108,10 +141,19 @@ button:hover {
   width: 400px;
 }
 
-.secondtext{
-  max-width: 700px;
-  margin-left: 140px;
+.secondtext {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 40px;
+
+  justify-content: center;
+  white-space: normal; /* Ensures text wraps normally */
+  text-align: left; /* Aligns text to the left */
+  margin: 0; /* Removes any default margins */
+  width: 100%; /* Ensures the text uses the full width of the container */
   color: white;
+  text-align: center;
 }
 .righttext{
   max-width: 580px;
@@ -182,7 +224,6 @@ h5,p{
 
 /* Contact */
 .card {
-  margin-top: 50px;
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
@@ -279,7 +320,17 @@ h5,p{
 #comment{
   height: 200px;
 }
-
+  
+.iconstyle {
+  color:  rgba(129, 241, 142, 1);;
+  font-size: 2rem;
+  margin: 0 10px;
+}
+.inline-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .svg{
   position: relative;
   top: -430px;
@@ -326,9 +377,10 @@ h5,p{
 
   .locationimg{
     height: 700px;
-    width: 700px;
+    width: 600px;
   }
 
+ .card{margin-top: 20px;}
 
   .galeri{
     display: grid;
@@ -374,8 +426,19 @@ h5,p{
   .galeryimg {
       height: 500px;
       width: 100%;
+      
   }
 
+  svg{
+    margin-top: 150px;
+  }
+ 
+  .secondpic2 {
+    position: relative;
+    top: -250px;
+    left: 30px;
+   
+}
   .firsttext {
       font-size: 40px;
   }
@@ -413,6 +476,22 @@ h5,p{
 }
 
 @media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+
+  }
+
+  .firstleft {
+    margin-top: 50px;
+}
+ 
+  svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
   .firstpart,
   .location,
   .galeri {
@@ -438,22 +517,49 @@ h5,p{
     max-width: 300px;
 }
 
-.secondtext {
-    font-size: 14px;
+/* .secondtext {
+    font-size: 16px;
     margin: 0 10px;
-}
+} */
   .firstimg,
-  .secondpic1,
-  .secondpic2,
   .locationimg,
   .galeryimg {
-      height: 300px;
-      width: 100%;
+      height: 400px;
+      width: 90%;
+  }
+
+  .left1{
+    margin-bottom: 100px;
+  }
+
+  .svg{
+    margin-top: 200px;
+    height: 200px;
+    width: auto;
+  }
+
+
+ 
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    
+    overflow: hidden;
+    margin-top: -61px;
+}
+  .secondpic2{
+  display: none;
+  }
+  .secondpic1{
+    order: 1;
+    height: 300px;
+    width: 90%;
   }
 
   .firsttext {
-      font-size: 24px;
+      font-size: 30px;
   }
+
 
   .button,
   .form button {
@@ -463,24 +569,26 @@ h5,p{
 
   .presentation {
       margin-top: 20px;
-      font-size: 18px;
+      font-size: 25px;
   }
 
   .secondtext,
   .righttext {
       margin: 0 auto;
-      max-width: 100%;
-      font-size: 10px;
+      max-width: 90%;
+      font-size: 18px;
       text-align: center;
+      margin-bottom: 30px;
   }
 
 
   .card {
-      width: 90%;
-      margin: 0 auto;
-      padding: 10px;
-  }
-
+    margin-top: 20px;    
+    width: 90%;          
+    margin-left: auto;   
+    margin-right: auto;  
+    padding: 10px;      
+}
   .title {
       font-size: 24px;
   }
@@ -491,5 +599,18 @@ h5,p{
 
   .svg {
       top: -200px;
+  }
+
+  .imageslider3{
+    margin-top: -150px;
+  }
+  .carousel-item {
+    height: 550px; /* Adjust this value to make the carousel smaller */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the container without changing aspect ratio */
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../Images/logo123.svg';
 import CategoryFilter from '../components/CategoryFilter';
 import Footer from '../components/Footer';
@@ -38,38 +38,42 @@ import { faSquareInstagram, faSquareWhatsapp, faFacebook } from '@fortawesome/fr
 import { motion } from 'framer-motion';
 
 const Galery = () => {
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  useEffect(() => {
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
+  }, []);
+  const [selectedCategory, setSelectedCategory] = useState('Tout');
 
   const photos = [
-    { id: 1, category: 'Plastik', src: plastik },
-    { id: 2, category: 'Plastik', src: plastik1 },
-    { id: 3, category: 'Plastik', src: plastik2 },
-    { id: 4, category: 'Plastik', src: plastik3 },
-    { id: 5, category: 'Plastik', src: plastik4 },
-    { id: 6, category: 'Plastik', src: plastik5 },
-    { id: 7, category: 'Mobilje', src: mobilje },
-    { id: 8, category: 'Mobilje', src: mobilje1 },
-    { id: 9, category: 'Mobilje', src: mobilje2 },
-    { id: 10, category: 'Mobilje', src: mobilje3 },
-    { id: 11, category: 'Mobilje', src: mobilje4 },
-    { id: 12, category: 'Mobilje', src: mobilje5 },
-    { id: 13, category: 'Mobilje', src: mobilje6 },
-    { id: 14, category: 'Mobilje', src: mobilje7 },
-    { id: 15, category: 'Dekor', src: dekor },
-    { id: 16, category: 'Dekor', src: dekor1 },
-    { id: 17, category: 'Dekor', src: dekor2 },
-    { id: 18, category: 'Dekor', src: dekor3 },
-    { id: 19, category: 'Dekor', src: dekor4 },
-    { id: 20, category: 'Dekor', src: dekor5 },
-    { id: 21, category: 'Dekor', src: dekor6 },
-    { id: 22, category: 'Dekor', src: dekor7 },
-    { id: 23, category: 'Dekor', src: dekor8 },
-    { id: 24, category: 'Dekor', src: dekor9 },
-    { id: 25, category: 'Dekor', src: dekor10 },
-    { id: 26, category: 'Dekor', src: dekor11 },
-    { id: 27, category: 'Dekor', src: dekor12 },
-    { id: 28, category: 'Dekor', src: dekor13 },
-    { id: 29, category: 'Dekor', src: dekor14 },
+    { id: 1, category: 'Plastique', src: plastik },
+    { id: 2, category: 'Plastique', src: plastik1 },
+    { id: 3, category: 'Plastique', src: plastik2 },
+    { id: 4, category: 'Plastique', src: plastik3 },
+    { id: 5, category: 'Plastique', src: plastik4 },
+    { id: 6, category: 'Plastique', src: plastik5 },
+    { id: 7, category: 'Meubles', src: mobilje },
+    { id: 8, category: 'Meubles', src: mobilje1 },
+    { id: 9, category: 'Meubles', src: mobilje2 },
+    { id: 10, category: 'Meubles', src: mobilje3 },
+    { id: 11, category: 'Meubles', src: mobilje4 },
+    { id: 12, category: 'Meubles', src: mobilje5 },
+    { id: 13, category: 'Meubles', src: mobilje6 },
+    { id: 14, category: 'Meubles', src: mobilje7 },
+    { id: 15, category: 'Décor', src: dekor },
+    { id: 16, category: 'Décor', src: dekor1 },
+    { id: 17, category: 'Décor', src: dekor2 },
+    { id: 18, category: 'Décor', src: dekor3 },
+    { id: 19, category: 'Décor', src: dekor4 },
+    { id: 20, category: 'Décor', src: dekor5 },
+    { id: 21, category: 'Décor', src: dekor6 },
+    { id: 22, category: 'Décor', src: dekor7 },
+    { id: 23, category: 'Décor', src: dekor8 },
+    { id: 24, category: 'Décor', src: dekor9 },
+    { id: 25, category: 'Décor', src: dekor10 },
+    { id: 26, category: 'Décor', src: dekor11 },
+    { id: 27, category: 'Décor', src: dekor12 },
+    { id: 28, category: 'Décor', src: dekor13 },
+    { id: 29, category: 'Décor', src: dekor14 },
   ];
 
   const handleCategoryChange = (category) => {
