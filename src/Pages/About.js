@@ -6,24 +6,25 @@ import { useState, useEffect } from 'react';
 import first from '../Images/04d7075a-0fc8-459c-971e-7dc33fc5c3e1.jpg';
 import second from '../Images/682592b9-e705-467e-95d1-240b36daf0df.jpg'
 import Footer from '../components/Footer';
+import firstpic from '../Images/Dekor/Dekor.jpg';
+import secondpic from '../Images/Mobilje/Mobilje2.jpg';
+import thirdpic from '../Images/Plastik/Plastik2.jpg';
 const text1Options = [
-  "Why art is so important",
-  "Why you shouldn't buy the new iPhone",
-  "Is life actually real?",
-  "How to learn JS in 2 months"
+  "Meubles",
+  "Décor",
+  "Plastique"
 ];
 const text2Options = [
-  "69 min. read",
-  "7 min. read",
-  "8 min. read",
-  "87,658.1277 min. read"
+  "Plexet",
+  "Plexet",
+  "Plexet"
 ];
-const colorOptions = ["#EBB9D2", "#FE9968", "#7FE0EB", "#6CE5B1"];
+const colorOptions = ["#EBB9D2", "#FE9968", "#7FE0EB"];
 const imageOptions = [
-  "https://images.unsplash.com/photo-1524721696987-b9527df9e512?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80",
-  "https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-  "https://images.unsplash.com/photo-1506073828772-2f85239b6d2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80",
-  "https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+  secondpic,
+  firstpic,
+  
+  thirdpic
 ];
 const About = () => {
   useEffect(() => {
