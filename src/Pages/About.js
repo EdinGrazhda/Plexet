@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import first from '../Images/04d7075a-0fc8-459c-971e-7dc33fc5c3e1.jpg';
 import second from '../Images/682592b9-e705-467e-95d1-240b36daf0df.jpg';
 import Footer from '../components/Footer';
-
+import { Link } from 'react-router-dom';
 import firstpic from '../Images/Dekor/Dekor.jpg';
 import secondpic from '../Images/Mobilje/Mobilje2.jpg';
 import thirdpic from '../Images/Plastik/Plastik2.jpg';
@@ -45,32 +45,31 @@ const About = () => {
   return (
     <div>
 <nav className="navbar navbar-expand-lg bg-body-tertiary">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="/">
-    <img src={logo} alt="Logo" width="40" height="24" class="d-inline-block align-text-top">
-</img>
-    </a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="about">About</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="ourwork">Our Work</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link " href='contact'>Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">
+          <img src={logo} alt="Logo" width="60" height="24" className="d-inline-block align-text-top" />
+        </Link>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link" aria-current="page" to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">About</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Galery">Galeri</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/ProductQuality">Product Quality</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 <div className='aboutpart'>
     
     <div className='aboutright'>

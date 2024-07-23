@@ -36,6 +36,7 @@ import dekor14 from '../Images/Dekor/Dekor14.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareInstagram, faSquareWhatsapp, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Galery = () => {
   useEffect(() => {
@@ -83,31 +84,31 @@ const Galery = () => {
   return (
     <div className="galery-page">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            <img src={logo} alt="Logo" width="40" height="24" className="d-inline-block align-text-top" />
-          </a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="about">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="ourwork">Our Work</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">
+          <img src={logo} alt="Logo" width="60" height="24" className="d-inline-block align-text-top" />
+        </Link>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link" aria-current="page" to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">About</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Galery">Galeri</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/ProductQuality">Product Quality</Link>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
       <h1 className='text1'>GALERI</h1>
 
       <CategoryFilter onCategoryChange={handleCategoryChange} />

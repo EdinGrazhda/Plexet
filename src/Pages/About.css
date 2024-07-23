@@ -276,6 +276,7 @@ body {
   gap: 50px;
   row-gap: 80px;
   background: rgba(129, 241, 142, 1);
+  margin-bottom: 50px;
 }
 
   .aboutright {
