@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../Images/logo123.svg';
+import logo from '../Images/icons/logo2.png';
 import CategoryFilter from '../components/CategoryFilter';
 import Footer from '../components/Footer';
 import Gallery from '../components/Gallery';

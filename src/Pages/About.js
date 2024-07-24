@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Pages/About.css';
-import logo from '../Images/logo123.svg';
+import logo from '../Images/icons/logo2.png';
 import lamp from '../Images/Rectangle 73.svg'
 import { useState, useEffect } from 'react';
 import first from '../Images/04d7075a-0fc8-459c-971e-7dc33fc5c3e1.jpg';
