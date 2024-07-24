@@ -20,16 +20,18 @@
       transform: scale(1.100);
   }
   
-  @media screen and (max-width:400px){
+  @media (max-width: 768px) {
     .category-filter{
       display: flex;
       flex-wrap: wrap;
       padding:5px 10px;
       flex-direction: column;
+      margin-left:25%;
       
     }
     .category-filter button{
       margin-top: 10px;
+      
     }
   }
   @media screen and (min-width: 1920px) {

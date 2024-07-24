@@ -90,15 +90,26 @@ PVC expansé.</p>
 <div id="carousel-wrapper">
       <div id="menu" style={{ background: colorOptions[index] }}>
         <div id="current-option">
-          <span id="current-option-text1" data-previous-text="" data-next-text="">
+          <div className='current-option-div1'> 
+            <span id="current-option-text1" data-previous-text="" data-next-text="">
             {text1Options[index]}
           </span>
-          <span id="current-option-text2" data-previous-text="" data-next-text="">
+          </div>
+         
+          <div className='current-option-div2'>
+            <span id="current-option-text2" data-previous-text="" data-next-text="">
             {text2Options[index]}
           </span>
+          </div>
+          
         </div>
-        <button id="previous-option" onClick={handlePrevious}></button>
-        <button id="next-option" onClick={handleNext}></button>
+        <div className='prev-div'>
+          <button id="previous-option" onClick={handlePrevious}></button>
+        </div>
+        <div className='next-div'>
+          <button id="next-option" onClick={handleNext}></button>
+        </div>
+        
       </div>
       <div id="image" style={{ backgroundImage: `url(${imageOptions[index]})` }}></div>
     </div>

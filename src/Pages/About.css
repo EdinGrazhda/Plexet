@@ -124,6 +124,7 @@ body {
   background-size: cover;
   position: absolute;
   transform: translate(310px, 50px);
+  margin-left: -25%;
 }
 
 #next-option {
@@ -136,6 +137,7 @@ body {
   background-size: cover;
   position: absolute;
   transform: translate(310px, -50px) rotate(180deg);
+  margin-left: -25%;
 }
 
 #image {
@@ -346,15 +348,32 @@ body {
       height: auto;
   }
 
-  #current-option-text1,
-  #current-option-text2 {
-      font-size: 1rem;
-  }
+ .current-option-div1 #current-option-text1{
+    font-size: 1rem;
+    margin-left: -16%;
+
+ }
+ .current-option-div2 #current-option-text2 {
+  font-size: 1rem;
+  margin-left: 18%;
+
+}
 
   #previous-option,
   #next-option {
       width: 1rem;
       height: 1rem;
+  }
+  .prev-div #previous-option{
+    position: static;
+    transform: rotate(180deg);
+    margin-top:-320%;
+  }
+  .next-div #next-option{
+    position: static;
+    transform: none;
+    margin-top:320%;
+    margin-left: -90%;
   }
 
   #image {
