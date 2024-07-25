@@ -83,10 +83,10 @@ const Galery = () => {
 
   return (
     <div className="galery-page">
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img src={logo} alt="Logo" width="60" height="24" className="d-inline-block align-text-top" />
+          <img src={logo} alt="Logo" width="100" height="35" className="d-inline-block align-text-top" />
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -94,16 +94,16 @@ const Galery = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/">Home</Link>
+              <Link className="nav-link" aria-current="page" to="/">Accueil</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
+              <Link className="nav-link" to="/about"> À propos</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/Galery">Galeri</Link>
+              <Link className="nav-link" to="/Galery">Galerie</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/ProductQuality">Product Quality</Link>
+              <Link className="nav-link" to="/productQuality">Qualité du produit</Link>
             </li>
           </ul>
         </div>

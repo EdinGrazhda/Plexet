@@ -53,16 +53,16 @@ const Home = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/">Home</Link>
+              <Link className="nav-link" aria-current="page" to="/">Accueil</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
+              <Link className="nav-link" to="/about"> À propos</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/Galery">Galeri</Link>
+              <Link className="nav-link" to="/Galery">Galerie</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/productQuality">Product Quality</Link>
+              <Link className="nav-link" to="/productQuality">Qualité du produit</Link>
             </li>
           </ul>
         </div>
