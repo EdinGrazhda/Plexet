@@ -42,7 +42,12 @@ function Footer() {
                   Suisse , En Budron H7,Box 65 1052 Le Mont-sur-Lausanne
                 </a></p>
                 <a id='loc' className='  texto23 fas fa-envelope mr-3' href="mailto:info@plexet.ch">info@plexet.ch</a>
-                <p><a className=' texto23 fas fa-envelope mr-3'  href="https://wa.me/41796462626" target="_blank" rel="noopener noreferrer">+41 79 646 26 26</a></p>
+                <p>
+                <a className='texto23 fas fa-envelope mr-3' href="tel:+41796462626" target="_blank" rel="noopener noreferrer">
+  +41 79 646 26 26
+</a>
+
+</p>
               </div>
               
             </div>
