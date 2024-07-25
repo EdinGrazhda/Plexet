@@ -45,7 +45,7 @@ const Home = () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img src={logo} alt="Logo" width="60" height="24" className="d-inline-block align-text-top" />
+          <img src={logo} alt="Logo" width="100" height="35" className="d-inline-block align-text-top" />
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -72,10 +72,11 @@ const Home = () => {
       {/* First Part */}
       <div className='firstpart'>
         <div className='firstleft'>
-          <h1 className='firsttext'>Plexet</h1>
+          <h1 className='firsttext'>PlexET</h1>
           <center>
             <div className="loader"></div>
           </center>
+          
           <h1 className='secondtext'>
             Pour une expérience de qualité supérieure et unique, Plexet est à votre service. Pour en savoir plus sur nos projets, cliquez sur le bouton ci-dessous.
           </h1>
@@ -220,7 +221,7 @@ const Home = () => {
         <div className='d-flex justify-content-center align-content-center'>
         <a href="mailto:info@plexet.ch" className="email-icon"><span className='emailtext'>Via Email</span></a> 
         </div>
-        <div className=' d-flex justify-content-center align-content-center'>
+        <div clas Name=' d-flex justify-content-center align-content-center'>
       <a href="mailto:info@plexet.ch" className="email-icon">
       <FontAwesomeIcon icon={faEnvelope} size="2x" />
     </a>
