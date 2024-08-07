@@ -39,7 +39,7 @@ function Footer() {
                 <h6 className="text-uppercase fw-bold">Contact</h6>
                 <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
                 <p><a  className='texto23' href="https://maps.app.goo.gl/B8wumiDMRauFzXCaA" target="_blank" rel="noopener noreferrer">
-                  Suisse , En Budron H7,Box 65 1052 Le Mont-sur-Lausanne
+                   En Budron H7,Box 65 1052 Le Mont-sur-Lausanne
                 </a></p>
                 <a id='loc' className='  texto23 fas fa-envelope mr-3' href="mailto:info@plexet.ch">info@plexet.ch</a>
                 <p>

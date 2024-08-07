@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import '../Pages/Home.css';
 import logo from '../Images/icons/logo2.png';
-import rectangle from '../Images/Plastik/Plastik5.jpg';
+import rectangle from '../Images/icons/PLexetLogo123.jpg';
 import whatsapp from '../Images/WhatsApp.svg';
 import support from '../Images/Support.svg';
 import search from '../Images/Search.svg';

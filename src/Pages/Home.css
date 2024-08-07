@@ -90,18 +90,20 @@
 
 .firstimg{
     height: 420px;
-    width: 600px;
+    width: 700px;
     max-width: 100%;
     margin-top: 20%;
     border-radius: 10px;
-    border:5px solid #81f18e
-
+    border:5px solid #81f18e;
+    object-fit:cover;
+    margin-left: -10%;
 }
+
 .inline-container{
   margin-bottom: 10%;
 }
 .firsttext{
-  color: rgba(129, 241, 142, 1);
+  color: rgb(72, 230, 90);
   font-size: 60px;
 }
 
@@ -125,7 +127,7 @@ button:hover {
 
 .presentation{
   margin-top: 70px;
-  color:  rgba(129, 241, 142, 1);
+  color: rgb(72, 230, 90);
 }
 .secondpic1{
   height: 400px;
@@ -397,7 +399,7 @@ h5,p{
     border:5px solid #81f18e
   }
   .emailtext{
-    color:#81f18e;
+    color: rgb(72, 230, 90);
     font-size: 40px;
   }
   .email-icon{
@@ -462,9 +464,11 @@ h5,p{
   .locationimg,
   .galeryimg {
       height: 500px;
-      width: 100%;
+      width: 90%;
+      margin-left: 1%;
       
   }
+
 
   svg{
     display: none;
@@ -542,9 +546,15 @@ h5,p{
   max-width: 100%;
   margin-bottom: 5%;
   border-radius: 10px;
-  border:5px solid #81f18e
-
+  border:5px solid #81f18e;
+  
 }
+/* .firstright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .inline-container{
 margin-bottom: -15%;
 
@@ -587,8 +597,10 @@ margin-bottom: -15%;
   .firstimg,
   .locationimg,
   .galeryimg {
-      height: 400px;
+      height: 200px;
       width: 90%;
+      margin-left: 1%;
+      object-fit:fill;
   }
 
   .left1{

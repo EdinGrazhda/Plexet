@@ -4,7 +4,7 @@ import foto from '../Images/foto3.jpg';
 import foto1 from '../Images/foto4.jpg';
 import foto2 from '../Images/foto5.jpg';
 import foto3 from '../Images/foto9.jpg';
-import icon from '../Images/icons/fullhd1.png';
+import icon from '../Images/icons/logo2.png';
 import foto4 from '../Images/Dekor/Dekor.jpg';
 import foto5 from '../Images/Dekor/Dekor4.jpg';
 import foto6 from '../Images/Dekor/Dekor8.jpg';
