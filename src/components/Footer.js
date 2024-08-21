@@ -11,13 +11,13 @@ function Footer() {
       <footer className="text-center text-lg-start text-dark" style={{ backgroundColor: '#ECEFF1' }}>
         <section className="d-flex flex-column flex-md-row justify-content-between p-4 text-white" style={{ backgroundColor: '#81f18e' }}>
           <div className=" socials d-flex justify-content-center justify-content-center align-items-center w-100">
-            <a className="text-white mx-2 mx-md-3" href="https://www.instagram.com/plexet_ch?igsh=MXQwbW0zcWFzd2VkZg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" style={{ margin: '0 0.5rem' }}>
+            <a className="text-white mx-2 mx-md-3" href="https://www.instagram.com/plexet.ch/" target="_blank" rel="noopener noreferrer" style={{ margin: '0 0.5rem' }}>
               <FontAwesomeIcon icon={faSquareInstagram} size="2x" />
             </a>
             <a className="text-white mx-2 mx-md-3" href="https://api.whatsapp.com/send?phone=41796462626" target="_blank" rel="noopener noreferrer" style={{ margin: '0 0.5rem' }}>
               <FontAwesomeIcon icon={faSquareWhatsapp} size="2x" />
             </a>
-            <a className="text-white mx-2 mx-md-3" href="https://www.facebook.com/profile.php?id=61563409940325" target="_blank" rel="noopener noreferrer" style={{ margin: '0 0.5rem' }}>
+            <a className="text-white mx-2 mx-md-3" href="https://www.facebook.com/plexetplexiglas" target="_blank" rel="noopener noreferrer" style={{ margin: '0 0.5rem' }}>
               <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
           </div>
